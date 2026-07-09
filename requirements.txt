@@ -1,0 +1,15 @@
+anthropic
+langchain
+langchain-anthropic
+langchain-community
+chromadb
+streamlit
+pandas
+numpy
+matplotlib
+seaborn
+pytest
+python-dotenv
+tiktoken
+fpdf2
+sentence-transformers
