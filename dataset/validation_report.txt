@@ -1,0 +1,69 @@
+CAPP-Bench-600 Validation Report
+Generated: 2026-07-12
+Total parts: 600
+
+======================================================================
+CHECK 1 -- Feature coverage
+======================================================================
+  chamfer                                   600
+  through_hole                              338
+  triangular_passage                          0
+  rectangular_passage                        27
+  six_sided_passage                           0
+  triangular_through_slot                     0
+  rectangular_through_slot                   58
+  circular_through_slot                      71
+  rectangular_through_step                  186
+  two_sided_through_step                      0
+  slanted_through_step                        0
+  O_ring_groove                             283
+  blind_hole                                258
+  triangular_pocket                           0
+  rectangular_pocket                        114
+  six_sided_pocket                            0
+  circular_end_pocket                        61
+  rectangular_blind_slot                    187
+  vertical_circular_end_blind_slot            0
+  horizontal_circular_end_blind_slot          0
+  triangular_blind_step                       0
+  circular_blind_step                         0
+  rectangular_blind_step                      0
+  round_external_cylinder                   415
+  thread_external                            24
+  thread_internal                           174
+  taper                                      18
+WARNING: under-represented (<5 occurrences): ['triangular_passage', 'six_sided_passage', 'triangular_through_slot', 'two_sided_through_step', 'slanted_through_step', 'triangular_pocket', 'six_sided_pocket', 'vertical_circular_end_blind_slot', 'horizontal_circular_end_blind_slot', 'triangular_blind_step', 'circular_blind_step', 'rectangular_blind_step']
+
+======================================================================
+CHECK 2 -- Part type distribution
+======================================================================
+  shaft                  57
+  flange                 60
+  bracket                66
+  coupling               60
+  gear                   49
+  bearing_housing        61
+  pulley                 65
+  cover_plate            61
+  bushing                63
+  connecting_rod         58
+All part types have >= 40 entries.
+
+======================================================================
+CHECK 3 -- Sequencing correctness
+======================================================================
+600/600 plans passed sequencing validation
+
+======================================================================
+CHECK 4 -- Operation count sanity
+======================================================================
+  3-5          19
+  6-8         159
+  9-12        324
+  13+          98
+FLAGGED (n<3 or n>18): [('PART_022', 19)]
+
+======================================================================
+CHECK 5 -- Source traceability
+======================================================================
+All 600 parts have source citation metadata: YES
