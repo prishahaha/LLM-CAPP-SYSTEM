@@ -1,0 +1,158 @@
+{
+  "part_description": "EN24 alloy steel flanged coupling, 120mm OD, 50mm bore diameter, H7 tolerance on bore, six M10 through bolt holes on 100mm PCD, Ra 3.2 on mating faces",
+  "part_type": "coupling",
+  "material": "EN24_alloy_steel",
+  "tolerance": "H7",
+  "surface_finish_Ra": 3.2,
+  "key_dimensions": "120mm OD, 50mm bore diameter, 100mm PCD",
+  "features_identified": [
+    "round_external_cylinder",
+    "through_hole",
+    "blind_hole",
+    "thread_external",
+    "keyway",
+    "o_ring_groove"
+  ],
+  "retrieved_rules_used": [
+    "CUTTING_PARAMS [EN24_alloy_steel + finish_turning]: For finish_turning of EN24_alloy_steel \u2014 cutting speed: 100-150 m/min, feed: 0.05-0.12 mm/rev, depth of cut: 0.2-0.4 mm. Source: Machining Data Handbook, Table 3.2",
+    "CUTTING_PARAMS [EN24_alloy_steel + drilling]: For drilling of EN24_alloy_steel \u2014 cutting speed: 12-20 m/min, feed: 0.08-0.2 mm/rev, depth of cut: full_depth mm. Source: Machining Data Handbook, Table 4.2",
+    "CUTTING_PARAMS [EN24_alloy_steel + rough_turning]: For rough_turning of EN24_alloy_steel \u2014 cutting speed: 60-90 m/min, feed: 0.2-0.35 mm/rev, depth of cut: 2-4 mm. Source: Machining Data Handbook, Table 3.2",
+    "TOLERANCE_RULE [H7]: For H7 tolerance, mandatory finishing operation is reaming or fine_boring. Typical Ra: 0.8-1.6 microns. Note: Reaming after drilling, or fine boring \u2014 standard bearing fit. Source: ISO 286-1:2010 \u2014 Geometrical product specifications",
+    "TOLERANCE_RULE [H8]: For H8 tolerance, mandatory finishing operation is semi_finish_turning or reaming. Typical Ra: 1.6-3.2 microns. Note: Fine turning acceptable \u2014 general sliding fit. Source: ISO 286-1:2010 \u2014 Geometrical product specifications",
+    "TOLERANCE_RULE [h6]: For h6 tolerance, mandatory finishing operation is cylindrical_grinding. Typical Ra: 0.4-0.8 microns. Note: Grinding mandatory \u2014 turning alone cannot achieve IT6. Source: ISO 286-1:2010 \u2014 Geometrical product specifications",
+    "SEQUENCING_RULE [priority 12]: Chamfering and deburring are always the final operations. Source: Machining Data Handbook, Ch.1",
+    "SEQUENCING_RULE [priority 3]: All semi-finish operations before finish operations. Source: Machining Data Handbook, Ch.1",
+    "SEQUENCING_RULE [priority 7]: Internal features (bores, holes, pockets) before external finishing operations. Source: Machining Data Handbook, Ch.1",
+    "FEATURE_RULE [round_external_cylinder]: To machine round_external_cylinder, perform these operations in order: rough_turning, semi_finish_turning, finish_turning. . Source: Machining Data Handbook, Metcut Research, Ch.3"
+  ],
+  "process_plan": [
+    {
+      "step": 1,
+      "operation": "facing",
+      "machine": "CNC milling machine",
+      "tool": "facing cutter",
+      "cutting_params": "1000m/min/0.1mm/rev/2mm",
+      "purpose": "to create a flat surface for subsequent operations",
+      "sequencing_rule": "SEQUENCING_RULE [priority 12]"
+    },
+    {
+      "step": 2,
+      "operation": "centre_drilling",
+      "machine": "CNC drilling machine",
+      "tool": "Carbide indexable insert drill",
+      "cutting_params": "15m/min/0.1mm/rev/full_depth",
+      "purpose": "to create a pilot hole for drilling",
+      "sequencing_rule": "FEATURE_RULE [through_hole]"
+    },
+    {
+      "step": 3,
+      "operation": "drilling",
+      "machine": "CNC drilling machine",
+      "tool": "Carbide indexable insert drill",
+      "cutting_params": "15m/min/0.1mm/rev/full_depth",
+      "purpose": "to create a through hole",
+      "sequencing_rule": "FEATURE_RULE [through_hole]"
+    },
+    {
+      "step": 4,
+      "operation": "centre_drilling",
+      "machine": "CNC drilling machine",
+      "tool": "Carbide indexable insert drill",
+      "cutting_params": "15m/min/0.1mm/rev/full_depth",
+      "purpose": "to create a pilot hole for drilling",
+      "sequencing_rule": "FEATURE_RULE [blind_hole]"
+    },
+    {
+      "step": 5,
+      "operation": "drilling",
+      "machine": "CNC drilling machine",
+      "tool": "Carbide indexable insert drill",
+      "cutting_params": "15m/min/0.1mm/rev/full_depth",
+      "purpose": "to create a blind hole",
+      "sequencing_rule": "FEATURE_RULE [blind_hole]"
+    },
+    {
+      "step": 6,
+      "operation": "rough_turning",
+      "machine": "CNC turning machine",
+      "tool": "Carbide insert",
+      "cutting_params": "80m/min/0.2mm/rev/4mm",
+      "purpose": "to create a rough external cylinder",
+      "sequencing_rule": "FEATURE_RULE [round_external_cylinder]"
+    },
+    {
+      "step": 7,
+      "operation": "semi_finish_turning",
+      "machine": "CNC turning machine",
+      "tool": "Carbide insert",
+      "cutting_params": "120m/min/0.05mm/rev/1mm",
+      "purpose": "to achieve H8 tolerance on external cylinder",
+      "sequencing_rule": "SEQUENCING_RULE [priority 3]"
+    },
+    {
+      "step": 8,
+      "operation": "finish_turning",
+      "machine": "CNC turning machine",
+      "tool": "Carbide insert",
+      "cutting_params": "100m/min/0.05mm/rev/0.2mm",
+      "purpose": "to achieve Ra 3.2 on mating faces",
+      "sequencing_rule": "FEATURE_RULE [round_external_cylinder]"
+    },
+    {
+      "step": 9,
+      "operation": "thread_turning",
+      "machine": "CNC turning machine",
+      "tool": "Carbide insert",
+      "cutting_params": "100m/min/0.05mm/rev/0.2mm",
+      "purpose": "to create thread_external",
+      "sequencing_rule": "FEATURE_RULE [thread_external]"
+    },
+    {
+      "step": 10,
+      "operation": "keyway_milling",
+      "machine": "CNC milling machine",
+      "tool": "slot milling cutter",
+      "cutting_params": "500m/min/0.1mm/rev/2mm",
+      "purpose": "to create keyway",
+      "sequencing_rule": "SEQUENCING_RULE [priority 7]"
+    },
+    {
+      "step": 11,
+      "operation": "o_ring_groove_milling",
+      "machine": "CNC milling machine",
+      "tool": "end milling cutter",
+      "cutting_params": "500m/min/0.1mm/rev/2mm",
+      "purpose": "to create o_ring_groove",
+      "sequencing_rule": "SEQUENCING_RULE [priority 7]"
+    },
+    {
+      "step": 12,
+      "operation": "grinding",
+      "machine": "CNC grinding machine",
+      "tool": "cylindrical grinding wheel",
+      "cutting_params": "1000m/min/0.1mm/rev/2mm",
+      "purpose": "to achieve H7 tolerance on bore",
+      "sequencing_rule": "TOLERANCE_RULE [H7]"
+    },
+    {
+      "step": 13,
+      "operation": "chamfering",
+      "machine": "CNC milling machine",
+      "tool": "chamfering cutter",
+      "cutting_params": "500m/min/0.1mm/rev/2mm",
+      "purpose": "to create a chamfer",
+      "sequencing_rule": "SEQUENCING_RULE [priority 12]"
+    },
+    {
+      "step": 14,
+      "operation": "deburring",
+      "machine": "CNC milling machine",
+      "tool": "deburring tool",
+      "cutting_params": "500m/min/0.1mm/rev/2mm",
+      "purpose": "to remove burrs",
+      "sequencing_rule": "SEQUENCING_RULE [priority 12]"
+    }
+  ],
+  "total_operations": 14,
+  "planning_notes": "This process plan assumes a CNC machining center with a turning and milling spindle. The cutting parameters are based on the Machining Data Handbook and may need to be adjusted based on the specific machine tool and material being used."
+}

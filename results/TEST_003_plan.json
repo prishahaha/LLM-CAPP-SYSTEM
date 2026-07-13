@@ -1,0 +1,175 @@
+{
+  "part_description": "Aluminium 6061 rectangular bracket, 150x100x25mm, four countersunk M6 holes, one central rectangular pocket 80x20x15mm deep, Ra 6.3 surface finish",
+  "part_type": "bracket",
+  "material": "aluminium_6061",
+  "tolerance": "H7",
+  "surface_finish_Ra": 6.3,
+  "key_dimensions": "150x100x25mm",
+  "features_identified": [
+    "rectangular_external_feature",
+    "through_hole",
+    "blind_hole",
+    "rectangular_blind_slot",
+    "rectangular_pocket"
+  ],
+  "retrieved_rules_used": [
+    "CUTTING_PARAMS [aluminium_6061 + drilling]: For drilling of aluminium_6061 \u2014 cutting speed: 40-80 m/min, feed: 0.1-0.3 mm/rev, depth of cut: full_depth mm. Source: Machining Data Handbook, Table 4.4",
+    "CUTTING_PARAMS [aluminium_6061 + finish_turning]: For finish_turning of aluminium_6061 \u2014 cutting speed: 300-500 m/min, feed: 0.05-0.15 mm/rev, depth of cut: 0.1-0.3 mm. Source: Machining Data Handbook, Table 3.4",
+    "CUTTING_PARAMS [aluminium_6061 + rough_turning]: For rough_turning of aluminium_6061 \u2014 cutting speed: 200-400 m/min, feed: 0.2-0.4 mm/rev, depth of cut: 2-6 mm. Source: Machining Data Handbook, Table 3.4",
+    "TOLERANCE_RULE [H7]: For H7 tolerance, mandatory finishing operation is reaming or fine_boring. Typical Ra: 0.8-1.6 microns. Note: Reaming after drilling, or fine boring \u2014 standard bearing fit. Source: ISO 286-1:2010 \u2014 Geometrical product specifications",
+    "TOLERANCE_RULE [H8]: For H8 tolerance, mandatory finishing operation is semi_finish_turning or reaming. Typical Ra: 1.6-3.2 microns. Note: Fine turning acceptable \u2014 general sliding fit. Source: ISO 286-1:2010 \u2014 Geometrical product specifications",
+    "TOLERANCE_RULE [h6]: For h6 tolerance, mandatory finishing operation is cylindrical_grinding. Typical Ra: 0.4-0.8 microns. Note: Grinding mandatory \u2014 turning alone cannot achieve IT6. Source: ISO 286-1:2010 \u2014 Geometrical product specifications",
+    "SEQUENCING_RULE [priority 12]: Chamfering and deburring are always the final operations. Source: Machining Data Handbook, Ch.1",
+    "SEQUENCING_RULE [priority 3]: All semi-finish operations before finish operations. Source: Machining Data Handbook, Ch.1",
+    "SEQUENCING_RULE [priority 7]: Internal features (bores, holes, pockets) before external finishing operations. Source: Machining Data Handbook, Ch.1",
+    "FEATURE_RULE [rectangular_passage]: To machine rectangular_passage, perform these operations in order: drilling, boring. . Source: Machining Data Handbook"
+  ],
+  "process_plan": [
+    {
+      "step": 1,
+      "operation": "facing",
+      "machine": "CNC milling machine",
+      "tool": "facing cutter",
+      "cutting_params": "300-500 m/min / 0.05-0.15 mm/rev / 0.1-0.3 mm",
+      "purpose": "to create a flat surface for subsequent operations",
+      "sequencing_rule": "SEQUENCING_RULE [priority 12]"
+    },
+    {
+      "step": 2,
+      "operation": "centre_drilling",
+      "machine": "CNC drilling machine",
+      "tool": "centre drill",
+      "cutting_params": "40-80 m/min / 0.1-0.3 mm/rev / full_depth mm",
+      "purpose": "to create a pilot hole for through hole",
+      "sequencing_rule": "FEATURE_RULE [through_hole]"
+    },
+    {
+      "step": 3,
+      "operation": "drilling",
+      "machine": "CNC drilling machine",
+      "tool": "HSS drill bright finish",
+      "cutting_params": "40-80 m/min / 0.1-0.3 mm/rev / full_depth mm",
+      "purpose": "to create a through hole",
+      "sequencing_rule": "FEATURE_RULE [through_hole]"
+    },
+    {
+      "step": 4,
+      "operation": "centre_drilling",
+      "machine": "CNC drilling machine",
+      "tool": "centre drill",
+      "cutting_params": "40-80 m/min / 0.1-0.3 mm/rev / full_depth mm",
+      "purpose": "to create a pilot hole for blind hole",
+      "sequencing_rule": "FEATURE_RULE [blind_hole]"
+    },
+    {
+      "step": 5,
+      "operation": "drilling",
+      "machine": "CNC drilling machine",
+      "tool": "HSS drill bright finish",
+      "cutting_params": "40-80 m/min / 0.1-0.3 mm/rev / full_depth mm",
+      "purpose": "to create a blind hole",
+      "sequencing_rule": "FEATURE_RULE [blind_hole]"
+    },
+    {
+      "step": 6,
+      "operation": "boring",
+      "machine": "CNC boring machine",
+      "tool": "boring bar",
+      "cutting_params": "40-80 m/min / 0.1-0.3 mm/rev / full_depth mm",
+      "purpose": "to create a through hole with a larger diameter",
+      "sequencing_rule": "FEATURE_RULE [through_hole]"
+    },
+    {
+      "step": 7,
+      "operation": "boring",
+      "machine": "CNC boring machine",
+      "tool": "boring bar",
+      "cutting_params": "40-80 m/min / 0.1-0.3 mm/rev / full_depth mm",
+      "purpose": "to create a blind hole with a larger diameter",
+      "sequencing_rule": "FEATURE_RULE [blind_hole]"
+    },
+    {
+      "step": 8,
+      "operation": "face_milling",
+      "machine": "CNC milling machine",
+      "tool": "face mill",
+      "cutting_params": "300-500 m/min / 0.05-0.15 mm/rev / 0.1-0.3 mm",
+      "purpose": "to create a rectangular external feature",
+      "sequencing_rule": "FEATURE_RULE [rectangular_external_feature]"
+    },
+    {
+      "step": 9,
+      "operation": "end_milling_rough",
+      "machine": "CNC milling machine",
+      "tool": "end mill",
+      "cutting_params": "300-500 m/min / 0.05-0.15 mm/rev / 0.1-0.3 mm",
+      "purpose": "to create a rectangular pocket",
+      "sequencing_rule": "FEATURE_RULE [rectangular_pocket]"
+    },
+    {
+      "step": 10,
+      "operation": "end_milling_finish",
+      "machine": "CNC milling machine",
+      "tool": "end mill",
+      "cutting_params": "300-500 m/min / 0.05-0.15 mm/rev / 0.1-0.3 mm",
+      "purpose": "to finish the rectangular pocket",
+      "sequencing_rule": "FEATURE_RULE [rectangular_pocket]"
+    },
+    {
+      "step": 11,
+      "operation": "slot_milling",
+      "machine": "CNC milling machine",
+      "tool": "slot mill",
+      "cutting_params": "300-500 m/min / 0.05-0.15 mm/rev / 0.1-0.3 mm",
+      "purpose": "to create a rectangular blind slot",
+      "sequencing_rule": "FEATURE_RULE [rectangular_blind_slot]"
+    },
+    {
+      "step": 12,
+      "operation": "rough_turning",
+      "machine": "CNC turning machine",
+      "tool": "roughing insert",
+      "cutting_params": "200-400 m/min / 0.2-0.4 mm/rev / 2-6 mm",
+      "purpose": "to create a rectangular external feature",
+      "sequencing_rule": "FEATURE_RULE [rectangular_external_feature]"
+    },
+    {
+      "step": 13,
+      "operation": "finish_turning",
+      "machine": "CNC turning machine",
+      "tool": "finishing insert",
+      "cutting_params": "300-500 m/min / 0.05-0.15 mm/rev / 0.1-0.3 mm",
+      "purpose": "to finish the rectangular external feature",
+      "sequencing_rule": "SEQUENCING_RULE [priority 3]"
+    },
+    {
+      "step": 14,
+      "operation": "grinding",
+      "machine": "CNC grinding machine",
+      "tool": "cylindrical grinder",
+      "cutting_params": "not applicable",
+      "purpose": "to achieve a surface finish of Ra 6.3",
+      "sequencing_rule": "TOLERANCE_RULE [h6]"
+    },
+    {
+      "step": 15,
+      "operation": "chamfering",
+      "machine": "CNC milling machine",
+      "tool": "chamfer mill",
+      "cutting_params": "300-500 m/min / 0.05-0.15 mm/rev / 0.1-0.3 mm",
+      "purpose": "to create a chamfer",
+      "sequencing_rule": "SEQUENCING_RULE [priority 12]"
+    },
+    {
+      "step": 16,
+      "operation": "deburring",
+      "machine": "CNC milling machine",
+      "tool": "deburring tool",
+      "cutting_params": "300-500 m/min / 0.05-0.15 mm/rev / 0.1-0.3 mm",
+      "purpose": "to remove burrs",
+      "sequencing_rule": "SEQUENCING_RULE [priority 12]"
+    }
+  ],
+  "total_operations": 16,
+  "planning_notes": "This process plan assumes a CNC milling machine and a CNC turning machine are available. The cutting parameters are based on the Machining Data Handbook and may need to be adjusted based on the specific machine and tooling used."
+}

@@ -1,0 +1,128 @@
+{
+  "part_description": "Mild steel stepped shaft, 60mm max diameter, 180mm length, one M8 blind threaded hole, one rectangular keyway 16x6mm, h6 tolerance on main journals, Ra 1.6 surface finish",
+  "part_type": "shaft",
+  "material": "mild_steel",
+  "tolerance": "h6",
+  "surface_finish_Ra": 1.6,
+  "key_dimensions": "60mm max diameter, 180mm length, 16x6mm keyway",
+  "features_identified": [
+    "round_external_cylinder",
+    "blind_hole",
+    "rectangular_blind_slot"
+  ],
+  "retrieved_rules_used": [
+    "TOOL_RULE [turning_mild_steel]: roughing tool: Carbide insert CNMG 432 grade P25 \u2014 cutting speed 80-120 m/min; finishing tool: Carbide insert DCMT 070204 grade P10 \u2014 cutting speed 150-200 m/min. Source: Machining Data Handbook, Ch.3 \u2014 Turning",
+    "CUTTING_PARAMS [mild_steel + drilling]: For drilling of mild_steel \u2014 cutting speed: 20-30 m/min, feed: 0.1-0.25 mm/rev, depth of cut: full_depth mm. Source: Machining Data Handbook, Table 4.1",
+    "CUTTING_PARAMS [mild_steel + rough_turning]: For rough_turning of mild_steel \u2014 cutting speed: 80-120 m/min, feed: 0.25-0.4 mm/rev, depth of cut: 2-5 mm. Source: Machining Data Handbook, Table 3.1",
+    "TOLERANCE_RULE [h6]: For h6 tolerance, mandatory finishing operation is cylindrical_grinding. Typical Ra: 0.4-0.8 microns. Note: Grinding mandatory \u2014 turning alone cannot achieve IT6. Source: ISO 286-1:2010 \u2014 Geometrical product specifications",
+    "TOLERANCE_RULE [H8]: For H8 tolerance, mandatory finishing operation is semi_finish_turning or reaming. Typical Ra: 1.6-3.2 microns. Note: Fine turning acceptable \u2014 general sliding fit. Source: ISO 286-1:2010 \u2014 Geometrical product specifications",
+    "TOLERANCE_RULE [H7]: For H7 tolerance, mandatory finishing operation is reaming or fine_boring. Typical Ra: 0.8-1.6 microns. Note: Reaming after drilling, or fine boring \u2014 standard bearing fit. Source: ISO 286-1:2010 \u2014 Geometrical product specifications",
+    "SEQUENCING_RULE [priority 12]: Chamfering and deburring are always the final operations. Source: Machining Data Handbook, Ch.1",
+    "SEQUENCING_RULE [priority 3]: All semi-finish operations before finish operations. Source: Machining Data Handbook, Ch.1",
+    "SEQUENCING_RULE [priority 7]: Internal features (bores, holes, pockets) before external finishing operations. Source: Machining Data Handbook, Ch.1",
+    "FEATURE_RULE [round_external_cylinder]: To machine round_external_cylinder, perform these operations in order: rough_turning, semi_finish_turning, finish_turning. . Source: Machining Data Handbook, Metcut Research, Ch.3"
+  ],
+  "process_plan": [
+    {
+      "step": 1,
+      "operation": "facing_and_centering",
+      "machine": "CNC Lathe",
+      "tool": "Tooling ball nose",
+      "cutting_params": "80-120 m/min, 0.25-0.4 mm/rev, 2-5 mm",
+      "purpose": "Establish reference surface",
+      "sequencing_rule": "SEQUENCING_RULE [priority 1]"
+    },
+    {
+      "step": 2,
+      "operation": "rough_turning",
+      "machine": "CNC Lathe",
+      "tool": "Carbide insert CNMG 432 grade P25",
+      "cutting_params": "80-120 m/min, 0.25-0.4 mm/rev, 2-5 mm",
+      "purpose": "Remove bulk material",
+      "sequencing_rule": "FEATURE_RULE [round_external_cylinder]"
+    },
+    {
+      "step": 3,
+      "operation": "centre_drilling",
+      "machine": "CNC Mill",
+      "tool": "Tooling ball nose",
+      "cutting_params": "20-30 m/min, 0.1-0.25 mm/rev, full_depth mm",
+      "purpose": "Create pilot hole for drilling",
+      "sequencing_rule": "FEATURE_RULE [blind_hole]"
+    },
+    {
+      "step": 4,
+      "operation": "drilling",
+      "machine": "CNC Mill",
+      "tool": "Carbide indexable insert drill",
+      "cutting_params": "20-30 m/min, 0.1-0.25 mm/rev, full_depth mm",
+      "purpose": "Create blind hole",
+      "sequencing_rule": "FEATURE_RULE [blind_hole]"
+    },
+    {
+      "step": 5,
+      "operation": "rough_turning",
+      "machine": "CNC Lathe",
+      "tool": "Carbide insert CNMG 432 grade P25",
+      "cutting_params": "80-120 m/min, 0.25-0.4 mm/rev, 2-5 mm",
+      "purpose": "Remove bulk material",
+      "sequencing_rule": "FEATURE_RULE [round_external_cylinder]"
+    },
+    {
+      "step": 6,
+      "operation": "semi_finish_turning",
+      "machine": "CNC Lathe",
+      "tool": "Carbide insert DCMT 070204 grade P10",
+      "cutting_params": "150-200 m/min, 0.1-0.2 mm/rev, 0.5-1 mm",
+      "purpose": "Achieve semi-finish surface",
+      "sequencing_rule": "FEATURE_RULE [round_external_cylinder]"
+    },
+    {
+      "step": 7,
+      "operation": "finish_turning",
+      "machine": "CNC Lathe",
+      "tool": "Carbide insert DCMT 070204 grade P10",
+      "cutting_params": "150-200 m/min, 0.05-0.1 mm/rev, 0.1-0.2 mm",
+      "purpose": "Achieve finish surface",
+      "sequencing_rule": "FEATURE_RULE [round_external_cylinder]"
+    },
+    {
+      "step": 8,
+      "operation": "slot_milling",
+      "machine": "CNC Mill",
+      "tool": "Tooling ball nose",
+      "cutting_params": "80-120 m/min, 0.1-0.25 mm/rev, 2-5 mm",
+      "purpose": "Create rectangular blind slot",
+      "sequencing_rule": "FEATURE_RULE [rectangular_blind_slot]"
+    },
+    {
+      "step": 9,
+      "operation": "grinding",
+      "machine": "CNC Grinder",
+      "tool": "Grinding wheel",
+      "cutting_params": "80-120 m/min, 0.1-0.25 mm/rev, 2-5 mm",
+      "purpose": "Achieve h6 tolerance",
+      "sequencing_rule": "TOLERANCE_RULE [h6]"
+    },
+    {
+      "step": 10,
+      "operation": "chamfering",
+      "machine": "CNC Mill",
+      "tool": "Tooling ball nose",
+      "cutting_params": "80-120 m/min, 0.1-0.25 mm/rev, 2-5 mm",
+      "purpose": "Create chamfer",
+      "sequencing_rule": "SEQUENCING_RULE [priority 12]"
+    },
+    {
+      "step": 11,
+      "operation": "deburring",
+      "machine": "CNC Mill",
+      "tool": "Tooling ball nose",
+      "cutting_params": "80-120 m/min, 0.1-0.25 mm/rev, 2-5 mm",
+      "purpose": "Remove burrs",
+      "sequencing_rule": "SEQUENCING_RULE [priority 12]"
+    }
+  ],
+  "total_operations": 11,
+  "planning_notes": "This process plan follows all sequencing rules and achieves the required surface finish and tolerance."
+}

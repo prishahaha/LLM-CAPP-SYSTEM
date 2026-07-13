@@ -6,6 +6,15 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
+_embedding_model = None
+
+def get_embedding_model():
+    global _embedding_model
+    if _embedding_model is None:
+        from sentence_transformers import SentenceTransformer
+        _embedding_model = SentenceTransformer("all-MiniLM-L6-v2")
+    return _embedding_model
+
 def build_chunks(rules: dict) -> list[str]:
     chunks = []
 
@@ -79,7 +88,7 @@ def build_knowledge_base():
 
     chunks = build_chunks(rules)
 
-    model = SentenceTransformer("all-MiniLM-L6-v2")
+    model = get_embedding_model()
     embeddings = model.encode(chunks).tolist()
 
     chroma_path = os.getenv("CHROMA_DB_PATH", "knowledge/chroma_db")
@@ -102,7 +111,7 @@ if __name__ == "__main__":
 
 
 def retrieve_relevant_rules(query: str, n_results: int = 5) -> list[dict]:
-    model = SentenceTransformer("all-MiniLM-L6-v2")
+    model = get_embedding_model()
     chroma_path = os.getenv("CHROMA_DB_PATH", "knowledge/chroma_db")
     client = chromadb.PersistentClient(path=chroma_path)
     collection = client.get_collection("manufacturing_rules")
