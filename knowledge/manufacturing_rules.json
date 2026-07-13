@@ -1,0 +1,312 @@
+{
+  "feature_to_operations": {
+    "round_external_cylinder": {
+      "base_operations": ["rough_turning", "semi_finish_turning", "finish_turning"],
+      "h6_tolerance_adds": ["cylindrical_grinding"],
+      "Ra_0_8_or_1_6_adds": ["cylindrical_grinding"],
+      "source": "Machining Data Handbook, Metcut Research, Ch.3"
+    },
+    "through_hole": {
+      "base_operations": ["centre_drilling", "drilling"],
+      "diameter_gt_25mm_adds": ["boring"],
+      "H7_tolerance_adds": ["reaming"],
+      "Ra_lte_1_6_adds": ["internal_grinding"],
+      "source": "Machining Data Handbook, Metcut Research, Ch.4"
+    },
+    "blind_hole": {
+      "base_operations": ["centre_drilling", "drilling"],
+      "diameter_gt_25mm_adds": ["boring"],
+      "H7_tolerance_adds": ["reaming"],
+      "source": "Machining Data Handbook, Metcut Research, Ch.4"
+    },
+    "rectangular_pocket": {
+      "base_operations": ["face_milling", "end_milling_rough", "end_milling_finish"],
+      "source": "Machining Data Handbook, Metcut Research, Ch.5"
+    },
+    "circular_end_pocket": {
+      "base_operations": ["face_milling", "end_milling_rough", "end_milling_finish"],
+      "source": "Machining Data Handbook, Metcut Research, Ch.5"
+    },
+    "rectangular_through_slot": {
+      "base_operations": ["slot_milling"],
+      "source": "Machining Data Handbook, Metcut Research, Ch.5"
+    },
+    "rectangular_blind_slot": {
+      "base_operations": ["slot_milling"],
+      "note": "Used for keyways — sequence after finish turning of that diameter",
+      "source": "Machining Data Handbook, Metcut Research, Ch.5"
+    },
+    "rectangular_through_step": {
+      "base_operations": ["face_milling", "shoulder_milling"],
+      "source": "Machining Data Handbook, Metcut Research, Ch.5"
+    },
+    "rectangular_blind_step": {
+      "base_operations": ["shoulder_milling"],
+      "source": "Machining Data Handbook, Metcut Research, Ch.5"
+    },
+    "two_sided_through_step": {
+      "base_operations": ["face_milling", "shoulder_milling"],
+      "source": "Machining Data Handbook, Metcut Research, Ch.5"
+    },
+    "slanted_through_step": {
+      "base_operations": ["face_milling", "angle_milling"],
+      "source": "Machining Data Handbook, Metcut Research, Ch.5"
+    },
+    "chamfer": {
+      "base_operations": ["chamfering"],
+      "note": "Always last or second-to-last operation",
+      "source": "Machining Data Handbook, Metcut Research, Ch.3"
+    },
+    "O_ring_groove": {
+      "base_operations": ["grooving_turning"],
+      "note": "Sequence after finish turning of that diameter",
+      "source": "Machining Data Handbook, Metcut Research, Ch.3"
+    },
+    "thread_external": {
+      "base_operations": ["thread_turning"],
+      "note": "After finish turning of that diameter. M6-M16 may use thread rolling.",
+      "source": "Machining Data Handbook, Metcut Research, Ch.6"
+    },
+    "thread_internal": {
+      "base_operations": ["tapping"],
+      "note": "M18+ use internal thread milling instead of tapping",
+      "source": "Machining Data Handbook, Metcut Research, Ch.6"
+    },
+    "taper": {
+      "base_operations": ["taper_turning"],
+      "source": "Machining Data Handbook, Metcut Research, Ch.3"
+    },
+    "triangular_pocket": {
+      "base_operations": ["end_milling_rough", "end_milling_finish"],
+      "source": "Machining Data Handbook, Metcut Research, Ch.5"
+    },
+    "six_sided_pocket": {
+      "base_operations": ["end_milling_rough", "end_milling_finish"],
+      "source": "Machining Data Handbook, Metcut Research, Ch.5"
+    },
+    "triangular_through_slot":          {"base_operations": ["end_milling"]},
+    "circular_through_slot":            {"base_operations": ["end_milling"]},
+    "triangular_blind_step":            {"base_operations": ["end_milling"]},
+    "circular_blind_step":              {"base_operations": ["end_milling"]},
+    "vertical_circular_end_blind_slot": {"base_operations": ["end_milling"]},
+    "horizontal_circular_end_blind_slot":{"base_operations": ["end_milling"]},
+    "rectangular_passage":              {"base_operations": ["drilling", "boring"]},
+    "triangular_passage":               {"base_operations": ["end_milling"]},
+    "six_sided_passage":                {"base_operations": ["end_milling"]}
+  },
+
+  "machine_capabilities": {
+    "CNC_Turning_Centre": {
+      "operations": ["rough_turning", "semi_finish_turning", "finish_turning",
+                     "boring", "grooving_turning", "thread_turning", "taper_turning",
+                     "facing", "centre_drilling"],
+      "suitable_for": ["shaft", "bushing", "coupling", "flange", "pulley"],
+      "note": "Primary machine for all rotational features",
+      "source": "Machining Data Handbook, Ch.1 — Machine Tool Selection"
+    },
+    "VMC_Vertical_Machining_Centre": {
+      "operations": ["face_milling", "end_milling_rough", "end_milling_finish",
+                     "slot_milling", "shoulder_milling", "angle_milling",
+                     "drilling", "reaming", "tapping", "chamfering", "end_milling"],
+      "suitable_for": ["bracket", "cover_plate", "flange", "bearing_housing",
+                       "connecting_rod", "gear"],
+      "note": "Primary machine for prismatic and planar features",
+      "source": "Machining Data Handbook, Ch.1 — Machine Tool Selection"
+    },
+    "Cylindrical_Grinder": {
+      "operations": ["cylindrical_grinding"],
+      "suitable_for": ["shaft", "coupling", "bushing"],
+      "note": "Used only for tight tolerances h6 or fine surface finish Ra <= 0.8",
+      "source": "Machining Data Handbook, Ch.7 — Grinding"
+    },
+    "Internal_Grinder": {
+      "operations": ["internal_grinding"],
+      "suitable_for": ["bearing_housing", "bushing", "coupling"],
+      "note": "Used for precision internal bores with H7 tolerance and Ra <= 0.8",
+      "source": "Machining Data Handbook, Ch.7 — Grinding"
+    },
+    "Thread_Rolling_Machine": {
+      "operations": ["thread_rolling"],
+      "suitable_for": ["shaft", "coupling"],
+      "note": "Cold forming — stronger threads than cut. Suitable M6 to M36.",
+      "source": "Machining Data Handbook, Ch.6 — Threading"
+    }
+  },
+
+  "tool_selection_rules": {
+    "turning_mild_steel": {
+      "rough": "Carbide insert CNMG 432 grade P25 — cutting speed 80-120 m/min",
+      "finish": "Carbide insert DCMT 070204 grade P10 — cutting speed 150-200 m/min",
+      "source": "Machining Data Handbook, Ch.3 — Turning"
+    },
+    "turning_alloy_steel": {
+      "rough": "Carbide insert CNMG 432 grade P25 coated — cutting speed 60-90 m/min",
+      "finish": "Carbide insert DCMT 070204 grade P10 — cutting speed 100-150 m/min",
+      "source": "Machining Data Handbook, Ch.3 — Turning"
+    },
+    "turning_cast_iron": {
+      "rough": "Carbide insert CNMG 432 grade K20 — cutting speed 70-100 m/min",
+      "finish": "Carbide insert DCMT grade K10 — cutting speed 120-160 m/min",
+      "source": "Machining Data Handbook, Ch.3 — Turning"
+    },
+    "turning_aluminium": {
+      "rough": "Carbide insert CCMT grade K10 uncoated — cutting speed 200-400 m/min",
+      "finish": "PCD tipped insert VCMT — cutting speed 300-500 m/min",
+      "source": "Machining Data Handbook, Ch.3 — Turning"
+    },
+    "turning_stainless_steel": {
+      "rough": "Carbide insert CNMG 432 grade M25 coated — cutting speed 40-60 m/min",
+      "finish": "Carbide insert DCMT grade M15 — cutting speed 60-90 m/min",
+      "source": "Machining Data Handbook, Ch.3 — Turning"
+    },
+    "drilling_steel_lt_12mm": {
+      "tool": "HSS twist drill DIN338",
+      "source": "Machining Data Handbook, Ch.4 — Drilling"
+    },
+    "drilling_steel_12_to_25mm": {
+      "tool": "Carbide tipped drill",
+      "source": "Machining Data Handbook, Ch.4 — Drilling"
+    },
+    "drilling_steel_gt_25mm": {
+      "tool": "Carbide indexable insert drill",
+      "source": "Machining Data Handbook, Ch.4 — Drilling"
+    },
+    "drilling_aluminium": {
+      "tool": "HSS drill bright finish — higher helix angle for chip clearance",
+      "source": "Machining Data Handbook, Ch.4 — Drilling"
+    },
+    "drilling_stainless_steel": {
+      "tool": "Cobalt HSS drill (5-8% Co) — reduced cutting speed 15-20 m/min",
+      "source": "Machining Data Handbook, Ch.4 — Drilling"
+    },
+    "reaming_H8_tolerance": {
+      "tool": "HSS reamer — use cutting oil, speed 30-50% of drilling speed",
+      "source": "Machining Data Handbook, Ch.4 — Reaming"
+    },
+    "reaming_H7_tolerance": {
+      "tool": "Carbide reamer — tighter tolerance than HSS",
+      "source": "Machining Data Handbook, Ch.4 — Reaming"
+    },
+    "milling_steel": {
+      "rough": "Carbide end mill 4-flute TiAlN coated — cutting speed 60-100 m/min",
+      "finish": "Carbide end mill 4-flute TiAlN coated — cutting speed 80-120 m/min",
+      "source": "Machining Data Handbook, Ch.5 — Milling"
+    },
+    "milling_aluminium": {
+      "rough": "Carbide end mill 3-flute uncoated polished — cutting speed 200-400 m/min",
+      "finish": "Carbide end mill 3-flute uncoated polished — cutting speed 300-500 m/min",
+      "source": "Machining Data Handbook, Ch.5 — Milling"
+    },
+    "grinding_mild_steel": {
+      "tool": "Aluminium oxide wheel A60 K5 V — wheel speed 30-35 m/s",
+      "source": "Machining Data Handbook, Ch.7 — Grinding"
+    },
+    "grinding_hardened_steel": {
+      "tool": "CBN wheel B126 100V — wheel speed 45-60 m/s",
+      "source": "Machining Data Handbook, Ch.7 — Grinding"
+    },
+    "tapping_steel": {
+      "tool": "HSS tap with cutting oil — speed 5-10 m/min",
+      "source": "Machining Data Handbook, Ch.6 — Threading"
+    },
+    "tapping_aluminium": {
+      "tool": "HSS spiral flute tap with kerosene — speed 10-20 m/min",
+      "source": "Machining Data Handbook, Ch.6 — Threading"
+    }
+  },
+
+  "cutting_parameters": [
+    {"material": "mild_steel",         "operation": "rough_turning",      "speed_mpm": "80-120",  "feed_mm_rev": "0.25-0.4",  "doc_mm": "2-5",          "source": "Machining Data Handbook, Table 3.1"},
+    {"material": "mild_steel",         "operation": "finish_turning",     "speed_mpm": "150-200", "feed_mm_rev": "0.05-0.15", "doc_mm": "0.2-0.5",      "source": "Machining Data Handbook, Table 3.1"},
+    {"material": "mild_steel",         "operation": "drilling",           "speed_mpm": "20-30",   "feed_mm_rev": "0.1-0.25",  "doc_mm": "full_depth",   "source": "Machining Data Handbook, Table 4.1"},
+    {"material": "mild_steel",         "operation": "end_milling_rough",  "speed_mpm": "60-100",  "feed_mm_rev": "0.05-0.15", "doc_mm": "1-3",          "source": "Machining Data Handbook, Table 5.1"},
+    {"material": "mild_steel",         "operation": "end_milling_finish", "speed_mpm": "80-120",  "feed_mm_rev": "0.02-0.08", "doc_mm": "0.2-0.5",      "source": "Machining Data Handbook, Table 5.1"},
+    {"material": "mild_steel",         "operation": "cylindrical_grinding","speed_mpm": "25-35",  "feed_mm_rev": "0.005-0.02","doc_mm": "0.005-0.02",   "source": "Machining Data Handbook, Table 7.1"},
+    {"material": "EN24_alloy_steel",   "operation": "rough_turning",      "speed_mpm": "60-90",   "feed_mm_rev": "0.2-0.35",  "doc_mm": "2-4",          "source": "Machining Data Handbook, Table 3.2"},
+    {"material": "EN24_alloy_steel",   "operation": "finish_turning",     "speed_mpm": "100-150", "feed_mm_rev": "0.05-0.12", "doc_mm": "0.2-0.4",      "source": "Machining Data Handbook, Table 3.2"},
+    {"material": "EN24_alloy_steel",   "operation": "drilling",           "speed_mpm": "12-20",   "feed_mm_rev": "0.08-0.2",  "doc_mm": "full_depth",   "source": "Machining Data Handbook, Table 4.2"},
+    {"material": "cast_iron",          "operation": "rough_turning",      "speed_mpm": "70-100",  "feed_mm_rev": "0.2-0.4",   "doc_mm": "2-5",          "source": "Machining Data Handbook, Table 3.3"},
+    {"material": "cast_iron",          "operation": "finish_turning",     "speed_mpm": "120-160", "feed_mm_rev": "0.05-0.12", "doc_mm": "0.2-0.4",      "source": "Machining Data Handbook, Table 3.3"},
+    {"material": "cast_iron",          "operation": "drilling",           "speed_mpm": "15-25",   "feed_mm_rev": "0.1-0.25",  "doc_mm": "full_depth",   "source": "Machining Data Handbook, Table 4.3"},
+    {"material": "aluminium_6061",     "operation": "rough_turning",      "speed_mpm": "200-400", "feed_mm_rev": "0.2-0.4",   "doc_mm": "2-6",          "source": "Machining Data Handbook, Table 3.4"},
+    {"material": "aluminium_6061",     "operation": "finish_turning",     "speed_mpm": "300-500", "feed_mm_rev": "0.05-0.15", "doc_mm": "0.1-0.3",      "source": "Machining Data Handbook, Table 3.4"},
+    {"material": "aluminium_6061",     "operation": "drilling",           "speed_mpm": "40-80",   "feed_mm_rev": "0.1-0.3",   "doc_mm": "full_depth",   "source": "Machining Data Handbook, Table 4.4"},
+    {"material": "aluminium_6061",     "operation": "end_milling_rough",  "speed_mpm": "200-400", "feed_mm_rev": "0.05-0.2",  "doc_mm": "1-4",          "source": "Machining Data Handbook, Table 5.2"},
+    {"material": "stainless_steel_316","operation": "rough_turning",      "speed_mpm": "40-60",   "feed_mm_rev": "0.15-0.25", "doc_mm": "1.5-3",        "source": "Machining Data Handbook, Table 3.5"},
+    {"material": "stainless_steel_316","operation": "finish_turning",     "speed_mpm": "60-90",   "feed_mm_rev": "0.05-0.12", "doc_mm": "0.1-0.3",      "source": "Machining Data Handbook, Table 3.5"},
+    {"material": "stainless_steel_316","operation": "drilling",           "speed_mpm": "8-15",    "feed_mm_rev": "0.05-0.15", "doc_mm": "full_depth",   "source": "Machining Data Handbook, Table 4.5"}
+  ],
+
+  "sequencing_rules": [
+    {"priority": 1,  "rule": "Facing and centering is always the first operation to establish datum surfaces", "source": "Machining Data Handbook, Ch.1 — Process Planning"},
+    {"priority": 2,  "rule": "All rough operations before semi-finish operations — remove bulk material first", "source": "Machining Data Handbook, Ch.1"},
+    {"priority": 3,  "rule": "All semi-finish operations before finish operations", "source": "Machining Data Handbook, Ch.1"},
+    {"priority": 4,  "rule": "Centre drilling must precede twist drilling on a lathe to prevent drill wandering", "source": "Machining Data Handbook, Ch.4"},
+    {"priority": 5,  "rule": "Drilling must precede boring — boring improves the hole left by drilling", "source": "Machining Data Handbook, Ch.4"},
+    {"priority": 6,  "rule": "Boring must precede reaming — reaming removes only 0.1-0.3mm stock", "source": "Machining Data Handbook, Ch.4"},
+    {"priority": 7,  "rule": "Internal features (bores, holes, pockets) before external finishing operations", "source": "Machining Data Handbook, Ch.1"},
+    {"priority": 8,  "rule": "Keyway milling after the cylinder it sits on is finish-turned", "source": "Machining Data Handbook, Ch.5"},
+    {"priority": 9,  "rule": "O-ring groove turning after finish turning of that diameter", "source": "Machining Data Handbook, Ch.3"},
+    {"priority": 10, "rule": "Thread cutting after the OD or bore it's on is at finished size", "source": "Machining Data Handbook, Ch.6"},
+    {"priority": 11, "rule": "Grinding is always the last size-controlling operation for that feature", "source": "Machining Data Handbook, Ch.7"},
+    {"priority": 12, "rule": "Chamfering and deburring are always the final operations", "source": "Machining Data Handbook, Ch.1"}
+  ],
+
+  "tolerance_requirements": {
+    "h6": {
+      "grade": "IT6",
+      "mandatory_operation": "cylindrical_grinding",
+      "typical_Ra": "0.4-0.8",
+      "note": "Grinding mandatory — turning alone cannot achieve IT6",
+      "source": "ISO 286-1:2010 — Geometrical product specifications"
+    },
+    "H7": {
+      "grade": "IT7",
+      "mandatory_operation": "reaming or fine_boring",
+      "typical_Ra": "0.8-1.6",
+      "note": "Reaming after drilling, or fine boring — standard bearing fit",
+      "source": "ISO 286-1:2010 — Geometrical product specifications"
+    },
+    "H8": {
+      "grade": "IT8",
+      "mandatory_operation": "semi_finish_turning or reaming",
+      "typical_Ra": "1.6-3.2",
+      "note": "Fine turning acceptable — general sliding fit",
+      "source": "ISO 286-1:2010 — Geometrical product specifications"
+    },
+    "IT9": {
+      "grade": "IT9",
+      "mandatory_operation": "none",
+      "typical_Ra": "3.2-6.3",
+      "note": "Standard turning or milling sufficient — general purpose",
+      "source": "ISO 286-1:2010 — Geometrical product specifications"
+    }
+  },
+
+  "surface_finish_requirements": {
+    "Ra_0_8": {
+      "value_microns": 0.8,
+      "required_operation": "cylindrical_grinding or internal_grinding",
+      "note": "Mirror finish — grinding mandatory",
+      "source": "Machining Data Handbook, Ch.7"
+    },
+    "Ra_1_6": {
+      "value_microns": 1.6,
+      "required_operation": "finish_turning (skilled operator) or grinding",
+      "note": "Fine finish — for bearing seats and sealing surfaces",
+      "source": "Machining Data Handbook, Ch.3"
+    },
+    "Ra_3_2": {
+      "value_microns": 3.2,
+      "required_operation": "semi_finish_turning or finish_milling",
+      "note": "Standard machined finish",
+      "source": "Machining Data Handbook, Ch.3"
+    },
+    "Ra_6_3": {
+      "value_microns": 6.3,
+      "required_operation": "rough_turning acceptable",
+      "note": "General purpose finish",
+      "source": "Machining Data Handbook, Ch.3"
+    }
+  }
+}
