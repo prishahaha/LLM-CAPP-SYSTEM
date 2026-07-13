@@ -99,3 +99,19 @@ def build_knowledge_base():
 
 if __name__ == "__main__":
     build_knowledge_base()
+
+
+def retrieve_relevant_rules(query: str, n_results: int = 5) -> list[dict]:
+    model = SentenceTransformer("all-MiniLM-L6-v2")
+    chroma_path = os.getenv("CHROMA_DB_PATH", "knowledge/chroma_db")
+    client = chromadb.PersistentClient(path=chroma_path)
+    collection = client.get_collection("manufacturing_rules")
+    query_embedding = model.encode([query]).tolist()
+    results = collection.query(
+        query_embeddings=query_embedding,
+        n_results=n_results
+    )
+    return [
+        {"rank": i + 1, "text": doc}
+        for i, doc in enumerate(results["documents"][0])
+    ]
