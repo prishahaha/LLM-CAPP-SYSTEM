@@ -1,0 +1,22 @@
+
+CAPP-BENCH EVALUATION SUMMARY
+==============================
+Total parts evaluated : 100
+LLM model used        : us.meta.llama3-1-8b-instruct-v1:0
+Dataset               : dataset/synthetic_parts.json (entries 580-599)
+
+AVERAGE SCORES:
+  Feature Recognition  : Rule=100.0%  LLM=84.47%
+  Operation Accuracy   : Rule=96.76%  LLM=87.65%
+  Sequence Correctness : Rule=100.0%  LLM=100.0%
+  Completeness         : Rule=96.76%  LLM=99.84%
+  Machine Selection    : Rule=100.0%  LLM=97.93%
+
+BEST IMPROVEMENT: Operation Completeness (+3.08%)
+
+FILES SAVED:
+  results/evaluation_results.json
+  results/comparison_table.csv
+  results/figures/bar_chart_comparison.png
+  results/figures/accuracy_distribution.png
+  results/figures/feature_recognition_heatmap.png

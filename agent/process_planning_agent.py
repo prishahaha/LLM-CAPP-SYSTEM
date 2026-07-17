@@ -29,7 +29,7 @@ llm = ChatBedrockConverse(
     model_id=os.getenv("BEDROCK_MODEL_ID", "us.meta.llama3-1-8b-instruct-v1:0"),
     region_name=os.getenv("AWS_REGION", "us-east-1"),
     temperature=0.1,
-    max_tokens=2048
+    max_tokens=4096
 )
 
 
@@ -39,7 +39,7 @@ def switch_model(new_model_id: str):
         model_id=new_model_id,
         region_name=os.getenv("AWS_REGION", "us-east-1"),
         temperature=0.1,
-        max_tokens=2048
+        max_tokens=4096
     )
     print(f"Model switched to: {new_model_id}")
 
@@ -84,18 +84,47 @@ def call_llm_with_retry(prompt_text: str,
 
 def parse_json_response(raw: str) -> dict:
     raw = raw.strip()
+    # Strip markdown code fences
     raw = re.sub(r"^```json\s*", "", raw)
     raw = re.sub(r"^```\s*", "", raw)
     raw = re.sub(r"\s*```$", "", raw)
     raw = raw.strip()
+
+    # Try direct parse first
     try:
         return json.loads(raw)
     except json.JSONDecodeError:
-        start = raw.find("{")
-        end = raw.rfind("}") + 1
-        if start != -1 and end > start:
-            return json.loads(raw[start:end])
-        raise ValueError(f"Could not parse JSON from response: {raw[:200]}")
+        pass
+
+    # Try extracting outermost JSON object
+    start = raw.find("{")
+    end = raw.rfind("}") + 1
+    if start != -1 and end > start:
+        candidate = raw[start:end]
+        try:
+            return json.loads(candidate)
+        except json.JSONDecodeError:
+            pass
+
+    # Try to fix truncated JSON by closing open brackets
+    candidate = raw[start:] if start != -1 else raw
+    open_braces   = candidate.count("{") - candidate.count("}")
+    open_brackets = candidate.count("[") - candidate.count("]")
+    # Remove trailing incomplete key-value pair
+    last_comma = candidate.rfind(",")
+    last_brace  = candidate.rfind("}")
+    last_bracket = candidate.rfind("]")
+    if last_comma > max(last_brace, last_bracket):
+        candidate = candidate[:last_comma]
+    # Close open structures
+    candidate += "]" * open_brackets + "}" * open_braces
+    try:
+        return json.loads(candidate)
+    except json.JSONDecodeError:
+        raise ValueError(
+            f"Could not parse JSON from LLM response. "
+            f"First 300 chars: {raw[:300]}"
+        )
 
 
 def generate_process_plan(part_description: str) -> dict:

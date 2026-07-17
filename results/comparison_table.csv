@@ -1,0 +1,6 @@
+Metric,Rule-Based CAPP,LLM Agent (Ours),Improvement
+Feature Recognition,100.0,84.47,-15.53
+Operation Accuracy,96.76,87.65,-9.11
+Sequence Correctness,1.0,1.0,0.0
+Operation Completeness,96.76,99.84,3.08
+Machine Selection,100.0,97.93,-2.07

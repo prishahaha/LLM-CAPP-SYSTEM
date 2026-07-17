@@ -1,0 +1,1824 @@
+{
+  "rule_based": [
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 100.0,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_501",
+      "part_type": "bushing"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 100.0,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_502",
+      "part_type": "cover_plate"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 100.0,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_503",
+      "part_type": "cover_plate"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 100.0,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_504",
+      "part_type": "flange"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 90.0,
+      "sequence_correctness": 1,
+      "operation_completeness": 90.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_505",
+      "part_type": "bearing_housing"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 90.0,
+      "sequence_correctness": 1,
+      "operation_completeness": 90.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_506",
+      "part_type": "coupling"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 100.0,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_507",
+      "part_type": "bracket"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 100.0,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_508",
+      "part_type": "bracket"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 91.67,
+      "sequence_correctness": 1,
+      "operation_completeness": 91.67,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_509",
+      "part_type": "coupling"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 100.0,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_510",
+      "part_type": "shaft"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 100.0,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_511",
+      "part_type": "flange"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 90.91,
+      "sequence_correctness": 1,
+      "operation_completeness": 90.91,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_512",
+      "part_type": "shaft"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 100.0,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_513",
+      "part_type": "bracket"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 90.91,
+      "sequence_correctness": 1,
+      "operation_completeness": 90.91,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_514",
+      "part_type": "pulley"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 100.0,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_515",
+      "part_type": "bearing_housing"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 100.0,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_516",
+      "part_type": "coupling"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 100.0,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_517",
+      "part_type": "bushing"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 100.0,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_518",
+      "part_type": "bracket"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 100.0,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_519",
+      "part_type": "gear"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 100.0,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_520",
+      "part_type": "bushing"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 100.0,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_521",
+      "part_type": "bracket"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 80.0,
+      "sequence_correctness": 1,
+      "operation_completeness": 80.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_522",
+      "part_type": "connecting_rod"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 90.0,
+      "sequence_correctness": 1,
+      "operation_completeness": 90.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_523",
+      "part_type": "gear"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 90.0,
+      "sequence_correctness": 1,
+      "operation_completeness": 90.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_524",
+      "part_type": "gear"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 100.0,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_525",
+      "part_type": "bearing_housing"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 100.0,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_526",
+      "part_type": "shaft"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 92.31,
+      "sequence_correctness": 1,
+      "operation_completeness": 92.31,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_527",
+      "part_type": "bushing"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 100.0,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_528",
+      "part_type": "bushing"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 100.0,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_529",
+      "part_type": "gear"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 100.0,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_530",
+      "part_type": "connecting_rod"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 100.0,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_531",
+      "part_type": "pulley"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 100.0,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_532",
+      "part_type": "bushing"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 100.0,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_533",
+      "part_type": "cover_plate"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 87.5,
+      "sequence_correctness": 1,
+      "operation_completeness": 87.5,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_534",
+      "part_type": "connecting_rod"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 100.0,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_535",
+      "part_type": "bearing_housing"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 92.31,
+      "sequence_correctness": 1,
+      "operation_completeness": 92.31,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_536",
+      "part_type": "bushing"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 100.0,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_537",
+      "part_type": "gear"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 91.67,
+      "sequence_correctness": 1,
+      "operation_completeness": 91.67,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_538",
+      "part_type": "bearing_housing"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 100.0,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_539",
+      "part_type": "bearing_housing"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 90.91,
+      "sequence_correctness": 1,
+      "operation_completeness": 90.91,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_540",
+      "part_type": "shaft"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 100.0,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_541",
+      "part_type": "flange"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 100.0,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_542",
+      "part_type": "cover_plate"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 90.0,
+      "sequence_correctness": 1,
+      "operation_completeness": 90.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_543",
+      "part_type": "connecting_rod"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 100.0,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_544",
+      "part_type": "flange"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 100.0,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_545",
+      "part_type": "shaft"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 100.0,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_546",
+      "part_type": "bracket"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 100.0,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_547",
+      "part_type": "flange"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 100.0,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_548",
+      "part_type": "cover_plate"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 90.91,
+      "sequence_correctness": 1,
+      "operation_completeness": 90.91,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_549",
+      "part_type": "bearing_housing"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 83.33,
+      "sequence_correctness": 1,
+      "operation_completeness": 83.33,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_550",
+      "part_type": "flange"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 100.0,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_551",
+      "part_type": "connecting_rod"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 100.0,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_552",
+      "part_type": "flange"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 100.0,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_553",
+      "part_type": "cover_plate"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 100.0,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_554",
+      "part_type": "gear"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 100.0,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_555",
+      "part_type": "pulley"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 90.91,
+      "sequence_correctness": 1,
+      "operation_completeness": 90.91,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_556",
+      "part_type": "flange"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 100.0,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_557",
+      "part_type": "bearing_housing"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 100.0,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_558",
+      "part_type": "bearing_housing"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 100.0,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_559",
+      "part_type": "shaft"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 100.0,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_560",
+      "part_type": "pulley"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 100.0,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_561",
+      "part_type": "bushing"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 100.0,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_562",
+      "part_type": "flange"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 100.0,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_563",
+      "part_type": "connecting_rod"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 90.91,
+      "sequence_correctness": 1,
+      "operation_completeness": 90.91,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_564",
+      "part_type": "pulley"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 90.0,
+      "sequence_correctness": 1,
+      "operation_completeness": 90.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_565",
+      "part_type": "gear"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 100.0,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_566",
+      "part_type": "pulley"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 100.0,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_567",
+      "part_type": "coupling"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 90.91,
+      "sequence_correctness": 1,
+      "operation_completeness": 90.91,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_568",
+      "part_type": "shaft"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 100.0,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_569",
+      "part_type": "shaft"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 100.0,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_570",
+      "part_type": "flange"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 90.0,
+      "sequence_correctness": 1,
+      "operation_completeness": 90.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_571",
+      "part_type": "bearing_housing"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 87.5,
+      "sequence_correctness": 1,
+      "operation_completeness": 87.5,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_572",
+      "part_type": "connecting_rod"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 91.67,
+      "sequence_correctness": 1,
+      "operation_completeness": 91.67,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_573",
+      "part_type": "bearing_housing"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 90.0,
+      "sequence_correctness": 1,
+      "operation_completeness": 90.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_574",
+      "part_type": "flange"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 100.0,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_575",
+      "part_type": "pulley"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 100.0,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_576",
+      "part_type": "flange"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 100.0,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_577",
+      "part_type": "bracket"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 100.0,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_578",
+      "part_type": "connecting_rod"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 88.89,
+      "sequence_correctness": 1,
+      "operation_completeness": 88.89,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_579",
+      "part_type": "bearing_housing"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 100.0,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_580",
+      "part_type": "coupling"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 100.0,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_581",
+      "part_type": "shaft"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 100.0,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_582",
+      "part_type": "pulley"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 88.89,
+      "sequence_correctness": 1,
+      "operation_completeness": 88.89,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_583",
+      "part_type": "gear"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 90.91,
+      "sequence_correctness": 1,
+      "operation_completeness": 90.91,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_584",
+      "part_type": "coupling"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 100.0,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_585",
+      "part_type": "gear"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 100.0,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_586",
+      "part_type": "cover_plate"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 100.0,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_587",
+      "part_type": "cover_plate"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 100.0,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_588",
+      "part_type": "bearing_housing"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 88.89,
+      "sequence_correctness": 1,
+      "operation_completeness": 88.89,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_589",
+      "part_type": "shaft"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 100.0,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_590",
+      "part_type": "cover_plate"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 100.0,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_591",
+      "part_type": "bracket"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 91.67,
+      "sequence_correctness": 1,
+      "operation_completeness": 91.67,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_592",
+      "part_type": "shaft"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 100.0,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_593",
+      "part_type": "cover_plate"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 100.0,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_594",
+      "part_type": "bearing_housing"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 100.0,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_595",
+      "part_type": "bracket"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 90.0,
+      "sequence_correctness": 1,
+      "operation_completeness": 90.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_596",
+      "part_type": "gear"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 100.0,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_597",
+      "part_type": "gear"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 100.0,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_598",
+      "part_type": "cover_plate"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 90.0,
+      "sequence_correctness": 1,
+      "operation_completeness": 90.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_599",
+      "part_type": "coupling"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 92.86,
+      "sequence_correctness": 1,
+      "operation_completeness": 92.86,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_600",
+      "part_type": "flange"
+    }
+  ],
+  "llm_agent": [
+    {
+      "feature_recognition_rate": 75.0,
+      "operation_accuracy": 87.5,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_501",
+      "part_type": "bushing"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 88.89,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_502",
+      "part_type": "cover_plate"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 100.0,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_503",
+      "part_type": "cover_plate"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 87.5,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_504",
+      "part_type": "flange"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 90.0,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 90.0,
+      "part_id": "PART_505",
+      "part_type": "bearing_housing"
+    },
+    {
+      "feature_recognition_rate": 66.67,
+      "operation_accuracy": 80.0,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_506",
+      "part_type": "coupling"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 100.0,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_507",
+      "part_type": "bracket"
+    },
+    {
+      "feature_recognition_rate": 75.0,
+      "operation_accuracy": 100.0,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_508",
+      "part_type": "bracket"
+    },
+    {
+      "feature_recognition_rate": 66.67,
+      "operation_accuracy": 83.33,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 58.33,
+      "part_id": "PART_509",
+      "part_type": "coupling"
+    },
+    {
+      "feature_recognition_rate": 80.0,
+      "operation_accuracy": 100.0,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_510",
+      "part_type": "shaft"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 87.5,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_511",
+      "part_type": "flange"
+    },
+    {
+      "feature_recognition_rate": 80.0,
+      "operation_accuracy": 100.0,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_512",
+      "part_type": "shaft"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 85.71,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_513",
+      "part_type": "bracket"
+    },
+    {
+      "feature_recognition_rate": 66.67,
+      "operation_accuracy": 90.91,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_514",
+      "part_type": "pulley"
+    },
+    {
+      "feature_recognition_rate": 83.33,
+      "operation_accuracy": 91.67,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_515",
+      "part_type": "bearing_housing"
+    },
+    {
+      "feature_recognition_rate": 75.0,
+      "operation_accuracy": 87.5,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_516",
+      "part_type": "coupling"
+    },
+    {
+      "feature_recognition_rate": 66.67,
+      "operation_accuracy": 90.91,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_517",
+      "part_type": "bushing"
+    },
+    {
+      "feature_recognition_rate": 75.0,
+      "operation_accuracy": 87.5,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_518",
+      "part_type": "bracket"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 87.5,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_519",
+      "part_type": "gear"
+    },
+    {
+      "feature_recognition_rate": 80.0,
+      "operation_accuracy": 55.56,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_520",
+      "part_type": "bushing"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 100.0,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_521",
+      "part_type": "bracket"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 100.0,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_522",
+      "part_type": "connecting_rod"
+    },
+    {
+      "feature_recognition_rate": 80.0,
+      "operation_accuracy": 80.0,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_523",
+      "part_type": "gear"
+    },
+    {
+      "feature_recognition_rate": 80.0,
+      "operation_accuracy": 80.0,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_524",
+      "part_type": "gear"
+    },
+    {
+      "feature_recognition_rate": 83.33,
+      "operation_accuracy": 45.45,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_525",
+      "part_type": "bearing_housing"
+    },
+    {
+      "feature_recognition_rate": 80.0,
+      "operation_accuracy": 90.0,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_526",
+      "part_type": "shaft"
+    },
+    {
+      "feature_recognition_rate": 83.33,
+      "operation_accuracy": 92.31,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_527",
+      "part_type": "bushing"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 100.0,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_528",
+      "part_type": "bushing"
+    },
+    {
+      "feature_recognition_rate": 66.67,
+      "operation_accuracy": 80.0,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_529",
+      "part_type": "gear"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 80.0,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_530",
+      "part_type": "connecting_rod"
+    },
+    {
+      "feature_recognition_rate": 50.0,
+      "operation_accuracy": 87.5,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_531",
+      "part_type": "pulley"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 100.0,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_532",
+      "part_type": "bushing"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 85.71,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_533",
+      "part_type": "cover_plate"
+    },
+    {
+      "feature_recognition_rate": 80.0,
+      "operation_accuracy": 87.5,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_534",
+      "part_type": "connecting_rod"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 88.89,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_535",
+      "part_type": "bearing_housing"
+    },
+    {
+      "feature_recognition_rate": 66.67,
+      "operation_accuracy": 92.31,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_536",
+      "part_type": "bushing"
+    },
+    {
+      "feature_recognition_rate": 50.0,
+      "operation_accuracy": 88.89,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_537",
+      "part_type": "gear"
+    },
+    {
+      "feature_recognition_rate": 83.33,
+      "operation_accuracy": 91.67,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_538",
+      "part_type": "bearing_housing"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 77.78,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_539",
+      "part_type": "bearing_housing"
+    },
+    {
+      "feature_recognition_rate": 83.33,
+      "operation_accuracy": 90.91,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_540",
+      "part_type": "shaft"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 83.33,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_541",
+      "part_type": "flange"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 100.0,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_542",
+      "part_type": "cover_plate"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 80.0,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_543",
+      "part_type": "connecting_rod"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 66.67,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_544",
+      "part_type": "flange"
+    },
+    {
+      "feature_recognition_rate": 80.0,
+      "operation_accuracy": 87.5,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_545",
+      "part_type": "shaft"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 100.0,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_546",
+      "part_type": "bracket"
+    },
+    {
+      "feature_recognition_rate": 80.0,
+      "operation_accuracy": 90.0,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_547",
+      "part_type": "flange"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 100.0,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_548",
+      "part_type": "cover_plate"
+    },
+    {
+      "feature_recognition_rate": 80.0,
+      "operation_accuracy": 90.91,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_549",
+      "part_type": "bearing_housing"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 83.33,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_550",
+      "part_type": "flange"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 85.71,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_551",
+      "part_type": "connecting_rod"
+    },
+    {
+      "feature_recognition_rate": 66.67,
+      "operation_accuracy": 71.43,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 85.71,
+      "part_id": "PART_552",
+      "part_type": "flange"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 83.33,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_553",
+      "part_type": "cover_plate"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 77.78,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 55.56,
+      "part_id": "PART_554",
+      "part_type": "gear"
+    },
+    {
+      "feature_recognition_rate": 83.33,
+      "operation_accuracy": 90.91,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_555",
+      "part_type": "pulley"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 81.82,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_556",
+      "part_type": "flange"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 72.73,
+      "sequence_correctness": 1,
+      "operation_completeness": 90.91,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_557",
+      "part_type": "bearing_housing"
+    },
+    {
+      "feature_recognition_rate": 83.33,
+      "operation_accuracy": 84.62,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_558",
+      "part_type": "bearing_housing"
+    },
+    {
+      "feature_recognition_rate": 66.67,
+      "operation_accuracy": 90.91,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_559",
+      "part_type": "shaft"
+    },
+    {
+      "feature_recognition_rate": 75.0,
+      "operation_accuracy": 87.5,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_560",
+      "part_type": "pulley"
+    },
+    {
+      "feature_recognition_rate": 75.0,
+      "operation_accuracy": 62.5,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_561",
+      "part_type": "bushing"
+    },
+    {
+      "feature_recognition_rate": 66.67,
+      "operation_accuracy": 80.0,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_562",
+      "part_type": "flange"
+    },
+    {
+      "feature_recognition_rate": 75.0,
+      "operation_accuracy": 100.0,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_563",
+      "part_type": "connecting_rod"
+    },
+    {
+      "feature_recognition_rate": 83.33,
+      "operation_accuracy": 90.91,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_564",
+      "part_type": "pulley"
+    },
+    {
+      "feature_recognition_rate": 83.33,
+      "operation_accuracy": 80.0,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_565",
+      "part_type": "gear"
+    },
+    {
+      "feature_recognition_rate": 80.0,
+      "operation_accuracy": 100.0,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_566",
+      "part_type": "pulley"
+    },
+    {
+      "feature_recognition_rate": 80.0,
+      "operation_accuracy": 88.89,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 66.67,
+      "part_id": "PART_567",
+      "part_type": "coupling"
+    },
+    {
+      "feature_recognition_rate": 80.0,
+      "operation_accuracy": 81.82,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_568",
+      "part_type": "shaft"
+    },
+    {
+      "feature_recognition_rate": 80.0,
+      "operation_accuracy": 70.0,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_569",
+      "part_type": "shaft"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 77.78,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_570",
+      "part_type": "flange"
+    },
+    {
+      "feature_recognition_rate": 60.0,
+      "operation_accuracy": 70.0,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_571",
+      "part_type": "bearing_housing"
+    },
+    {
+      "feature_recognition_rate": 75.0,
+      "operation_accuracy": 100.0,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_572",
+      "part_type": "connecting_rod"
+    },
+    {
+      "feature_recognition_rate": 83.33,
+      "operation_accuracy": 91.67,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 91.67,
+      "part_id": "PART_573",
+      "part_type": "bearing_housing"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 100.0,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_574",
+      "part_type": "flange"
+    },
+    {
+      "feature_recognition_rate": 60.0,
+      "operation_accuracy": 100.0,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_575",
+      "part_type": "pulley"
+    },
+    {
+      "feature_recognition_rate": 50.0,
+      "operation_accuracy": 77.78,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_576",
+      "part_type": "flange"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 100.0,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_577",
+      "part_type": "bracket"
+    },
+    {
+      "feature_recognition_rate": 75.0,
+      "operation_accuracy": 87.5,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_578",
+      "part_type": "connecting_rod"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 88.89,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_579",
+      "part_type": "bearing_housing"
+    },
+    {
+      "feature_recognition_rate": 75.0,
+      "operation_accuracy": 87.5,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_580",
+      "part_type": "coupling"
+    },
+    {
+      "feature_recognition_rate": 66.67,
+      "operation_accuracy": 100.0,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_581",
+      "part_type": "shaft"
+    },
+    {
+      "feature_recognition_rate": 66.67,
+      "operation_accuracy": 100.0,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_582",
+      "part_type": "pulley"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 88.89,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 88.89,
+      "part_id": "PART_583",
+      "part_type": "gear"
+    },
+    {
+      "feature_recognition_rate": 83.33,
+      "operation_accuracy": 90.91,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 63.64,
+      "part_id": "PART_584",
+      "part_type": "coupling"
+    },
+    {
+      "feature_recognition_rate": 50.0,
+      "operation_accuracy": 87.5,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_585",
+      "part_type": "gear"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 85.71,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_586",
+      "part_type": "cover_plate"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 85.71,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_587",
+      "part_type": "cover_plate"
+    },
+    {
+      "feature_recognition_rate": 75.0,
+      "operation_accuracy": 100.0,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_588",
+      "part_type": "bearing_housing"
+    },
+    {
+      "feature_recognition_rate": 75.0,
+      "operation_accuracy": 88.89,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_589",
+      "part_type": "shaft"
+    },
+    {
+      "feature_recognition_rate": 66.67,
+      "operation_accuracy": 83.33,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_590",
+      "part_type": "cover_plate"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 100.0,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_591",
+      "part_type": "bracket"
+    },
+    {
+      "feature_recognition_rate": 60.0,
+      "operation_accuracy": 75.0,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_592",
+      "part_type": "shaft"
+    },
+    {
+      "feature_recognition_rate": 80.0,
+      "operation_accuracy": 100.0,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_593",
+      "part_type": "cover_plate"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 66.67,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_594",
+      "part_type": "bearing_housing"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 100.0,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_595",
+      "part_type": "bracket"
+    },
+    {
+      "feature_recognition_rate": 66.67,
+      "operation_accuracy": 90.0,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_596",
+      "part_type": "gear"
+    },
+    {
+      "feature_recognition_rate": 83.33,
+      "operation_accuracy": 88.89,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_597",
+      "part_type": "gear"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 100.0,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_598",
+      "part_type": "cover_plate"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 90.0,
+      "sequence_correctness": 1,
+      "operation_completeness": 100.0,
+      "machine_selection_accuracy": 100.0,
+      "part_id": "PART_599",
+      "part_type": "coupling"
+    },
+    {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 78.57,
+      "sequence_correctness": 1,
+      "operation_completeness": 92.86,
+      "machine_selection_accuracy": 92.86,
+      "part_id": "PART_600",
+      "part_type": "flange"
+    }
+  ],
+  "summary": {
+    "rule_based_averages": {
+      "feature_recognition_rate": 100.0,
+      "operation_accuracy": 96.76,
+      "sequence_correctness": 1.0,
+      "operation_completeness": 96.76,
+      "machine_selection_accuracy": 100.0
+    },
+    "llm_agent_averages": {
+      "feature_recognition_rate": 84.47,
+      "operation_accuracy": 87.65,
+      "sequence_correctness": 1.0,
+      "operation_completeness": 99.84,
+      "machine_selection_accuracy": 97.93
+    },
+    "total_parts_evaluated": 100,
+    "model_used": "us.meta.llama3-1-8b-instruct-v1:0"
+  }
+}
